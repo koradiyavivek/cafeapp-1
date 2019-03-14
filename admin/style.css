@@ -1,0 +1,107 @@
+/* basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-family: 'Fresca', sans-serif;
+    font-size: 55.5%;
+}
+
+/* header */
+header {
+    background-color: #070d59;
+    position: relative;
+    height: 30vh;
+}
+.header-title {
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    /* padding-bottom: 3rem; */
+}
+header h2 {
+   position: absolute;
+   font-size: 5rem;
+   color: white;
+   top: 2rem;
+   right: 2rem; 
+}
+
+/* main */
+main {
+    background-color: #ceddef;
+    display: flex;
+    /* height: 70vh */
+}
+.main-content{
+    /* background-color: aliceblue; */
+    font-size: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* client */
+.client-card {
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 28rem;
+    height: 40rem;
+    position: relative;
+    margin: 2rem;
+}
+.client-h4 {
+    background-color: #1f3c88;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+.client-ul {
+    width: 100%;
+    list-style: none;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.client-button {
+    position: absolute;
+    width: 50%;
+    height: 3.6rem;
+    margin: 2rem 25%;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    bottom: 0;
+}
+.checkbox {
+    position: absolute;
+    -webkit-appearance:none;
+    width:3rem;
+    height:3rem;
+    background:white;
+    border-radius:5px;
+    border:1px solid black;
+    bottom: 0%;
+    right: 1rem;
+}
+.checkbox:checked { 
+    content:url(./images/tick.jpg);
+}
+
+.countdown{
+    font-size:2rem;
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color:white;
+}
+.fixit{
+    position: absolute;
+    bottom: 0%;
+    right: 15%;
+    font-size:2rem;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-utensils fa-8x header-logo" style="color:white;margin:2rem 0 0 2rem;"></i>
+        <h1 class="header-title">
+            Welcome to Vcet Bucks
+        </h1>
+        <h2 class="client_name">_ _</h2>
+    </header>
+    <main>
+        <div class="left">
+            <!-- Recommended  -->
+            <div class="recommended">
+                <h3 class="recom-title">
+                    Recommended :
+                </h3>
+                <div class="recom-items">
+                    <div class="recom-i" id="1">
+                        <!-- image -->
+                        <img src="./images/combo-1.jpeg" alt="conbo-1">
+                        <hr>
+                        <!-- title -->
+                        <h4>Pizza Combo</h4>
+                        <!-- price -->
+                        <p>Rs. 300 /-</p>
+                        <!-- quantity -->
+                        <input type="number" name="" id="1c" value="1" max="10" min="1" class="number">
+                        <!-- add to cart -->
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                    </div>
+                    <div class="recom-i" id="2">
+                        <!-- image -->
+                        <img src="./images/combo-2.jpg" alt="combo-2">
+                        <hr>
+                        <!-- title -->
+                        <h4>Burger combo</h4>
+                        <!-- price -->
+                        <p>Rs. 185 /-</p>
+                        <!-- quantity -->
+                        <input type="number" name="" id="2c" value="1" max="10" min="1" class="number">
+                        <!-- add to cart -->
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                    </div>
+                </div>
+            </div>
+            <!-- burger -->
+            <div class="burger">
+                <h3 class="recom-title">
+                    Burger :
+                </h3>
+                <div class="recom-items">
+                    <div class="recom-i" id="3">
+                        <!-- image -->
+                        <img src="./images/burger-2.jpg" alt="burger-1">
+                        <hr>
+                        <!-- title -->
+                        <h4>Mc Aloo Tikki</h4>
+                        <!-- price -->
+                        <p>Rs. 45 /-</p>
+                        <!-- quantity -->
+                        <input type="number" name="" id="3c" value="1" max="10" min="1" class="number">
+                        <!-- add to cart -->
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                    </div>
+                    <div class="recom-i" id="4">
+                        <!-- image -->
+                        <img src="./images/burger-3.jpg" alt="burger-2">
+                        <hr>
+                        <!-- title -->
+                        <h4>Cheese Burger</h4>
+                        <!-- price -->
+                        <p>Rs. 150 /-</p>
+                        <!-- quantity -->
+                        <input type="number" name="" id="4c" value="1" max="10" min="1" class="number">
+                        <!-- add to cart -->
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                    </div>
+                </div>
+            </div>
+            <!-- coffee -->
+            <div class="coffee">
+                <h3 class="recom-title">
+                    Snacks :
+                </h3>
+                <div class="recom-items">
+                    <div class="recom-i" id="5">
+                        <!-- image -->
+                        <img src="./images/fries.jpg" alt="white-coffee">
+                        <hr>
+                        <!-- title -->
+                        <h4>Fries</h4>
+                        <!-- price -->
+                        <p>Rs. 100 /-</p>
+                        <!-- quantity -->
+                        <input type="number" name="" id="5c" value="1" max="10" min="1" class="number">
+                        <!-- add to cart -->
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                    </div>
+                    <div class="recom-i" id="6">
+                        <!-- image -->
+                        <img src="./images/jain-pizza.jpeg" alt="combo">
+                        <hr>
+                        <!-- title -->
+                        <h4>Jain Pizza</h4>
+                        <!-- price -->
+                        <p>Rs. 150 /-</p>
+                        <!-- quantity -->
+                        <input type="number" name="" id="6c " value="1" max="10" min="1" class="number">
+                        <!-- add to cart -->
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <!-- title -->
+            <h2>Bill
+                <hr>
+            </h2>
+            <!-- date -->
+            <p class="time"><!--21st Jan 2019 10:11 --></p>
+            <!-- total bill  -->
+            <div class="bill">
+
+            </div>
+            <!-- final bill -->
+            <output>
+                <hr> _ _
+            </output>
+            <label for="userAgreement" class="userAgreement"><a href="https://www.google.co.in" target="_blank" class="flink">Agree Term and Condition</a></label>
+            <input type="checkbox" class="checkbox fix" id="userAgreement" checked="checked">
+            <button class='form-submit' hidden>
+                PAY
+            </button>
+        </div>
+
+        <!-- after payment  -->
+        <div class="afterPayment" style="display:none" >
+            <!-- thank you message -->
+            <h2>Thanks for ordering</h2>
+            <h3>Happy Food Day</h3>
+            <!-- waiter img -->
+            <img src="https://media.giphy.com/media/1BfRGm925REKpwfjWk/giphy.gif" alt="waiter">
+            <!-- timer -->
+            <div id="countdown" hidden class="timer glow">Time</div>
+        </div>
+
+    </main>
+    <footer>
+        <h2>&copy;2019 vivikoradiya.in</h2>
+        <hr>
+        <div class="social-media">
+            <a href="https://www.facebook.com/vivek.koradiya" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.instagram.com/vivious.in/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
+        </div>
+    </footer>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script/index.js"></script>
+    <script src="./script/client.js"></script>
+</body>
+
+</html>

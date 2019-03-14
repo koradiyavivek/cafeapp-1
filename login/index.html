@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+    <title>Vivi Cafe</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%; 
+            box-sizing: border-box;
+        }
+        html{
+            position: relative;
+            font-family:Fresca;
+        }
+        main {
+            background: linear-gradient(180deg, rgba(2, 2, 2, 0.726), rgba(255, 255, 255, 0.089)), url('./login-background.jpg');
+            width: 100vw;
+            height: 100vh;
+        }
+        form {
+            position: absolute;
+            background-color: #7d84a8b4;
+            margin: auto;
+            width: 25%;
+            height: 45%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        form h2 {
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 2rem;
+            color:white;
+        }
+        .name {
+            width: 75%;
+            margin-left: 12.5%;
+            height: 3rem;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 2rem;
+            padding-left: 1rem;
+        }
+        .submit {
+            border-radius: 50%;
+            padding: 1rem;
+            align-self: center;
+            font-size: 2rem;
+            border: 2px solid black;
+        }
+
+        @media (max-width:1200px) {
+            form {
+                width: 45%;
+                height: 55%;
+            }
+        }
+        @media (max-width:750px) {
+            form {
+                width: 75%;
+                height: 75%;
+            }
+        }
+        @media (max-width:450px) {
+            form {
+                width: 85%;
+                height: 75%;
+            }
+        }
+        @media (max-width:380px) {
+            *{font-size: 60%}
+            form {
+                width: 85%;
+                height: 65%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="/name" autocomplete="off">
+            <h2>Login</h2>
+            <input type="text" placeholder="Enter your Name" name="name" required minlength="2" maxlength="8" autofocus class="name">
+            <input type="submit" value="Go" class="submit">
+        </form>
+    </main>
+</body>
+</html>
